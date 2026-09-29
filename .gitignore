@@ -1,0 +1,23 @@
+# Local source copies and generated artifacts
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+references/*
+!references/.gitkeep
+models/*
+!models/.gitkeep
+
+# Environments, credentials and caches
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+~$*
