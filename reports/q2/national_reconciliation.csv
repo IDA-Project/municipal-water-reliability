@@ -1,0 +1,10 @@
+measure,wsa_sum,national_value,difference,matches,wsa_missing_count
+Population,60324292,60324292,0,True,0
+Population with access to water,52435580,52988091,-552511,False,9
+Population Reliable Supply,40042749,40042749,0,True,0
+Urban Population,38202200,38202200,0,True,2
+Urban Population with access to water,36817096,36817096,0,True,2
+Urban Population Reliable Supply,29368917,29368917,0,True,2
+Rural Population,22122092,22122092,0,True,7
+Rural Population with access to water,16170995,16170995,0,True,7
+Rural Population Reliable Supply,10673832,10673832,0,True,7

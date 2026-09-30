@@ -1,0 +1,54 @@
+{
+  "data_path": "data\\raw\\NIWIS_Water Supply Reliability - Population_26-Sep-2026.csv",
+  "development_rows": 115,
+  "test_rows": 29,
+  "transformed_feature_count": 23,
+  "transformed_features": [
+    "numeric__population",
+    "numeric__population_with_access",
+    "numeric__urban_population",
+    "numeric__urban_population_with_access",
+    "numeric__rural_population",
+    "numeric__rural_population_with_access",
+    "numeric__access_rate_pct",
+    "numeric__urban_access_rate_pct",
+    "numeric__rural_access_rate_pct",
+    "numeric__urban_population_share_pct",
+    "numeric__rural_population_share_pct",
+    "numeric__missingindicator_population_with_access",
+    "numeric__missingindicator_urban_population",
+    "numeric__missingindicator_urban_population_with_access",
+    "numeric__missingindicator_rural_population",
+    "numeric__missingindicator_rural_population_with_access",
+    "numeric__missingindicator_access_rate_pct",
+    "numeric__missingindicator_urban_access_rate_pct",
+    "numeric__missingindicator_rural_access_rate_pct",
+    "numeric__missingindicator_urban_population_share_pct",
+    "numeric__missingindicator_rural_population_share_pct",
+    "categorical__dominant_population_group_rural",
+    "categorical__dominant_population_group_urban"
+  ],
+  "pre_resampling_class_counts": {
+    "0": 84,
+    "1": 31
+  },
+  "post_resampling_class_counts": {
+    "0": 84,
+    "1": 84
+  },
+  "resampled_training_rows": 168,
+  "cross_validation": {
+    "type": "RepeatedStratifiedKFold",
+    "splits": 5,
+    "repeats": 5,
+    "total_validation_folds": 25
+  },
+  "leakage_controls": [
+    "The target is created before splitting, using a pre-declared policy threshold.",
+    "Reliability counts and percentages are not selected by the feature engineer.",
+    "The WSA identifier is not selected by the feature engineer.",
+    "Imputation, encoding and scaling are fitted on development/training-fold rows only.",
+    "Oversampling is applied only by fit_resample on training rows.",
+    "The held-out test rows are not transformed during this Q2 workflow."
+  ]
+}
