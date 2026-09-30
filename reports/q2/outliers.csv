@@ -1,0 +1,110 @@
+row_index,WSA Name,column,value,lower_fence,upper_fence
+11,Nelson Mandela Bay Metropolitan Municipality,Population,1207647,-537488.625,1049648.375
+12,OR Tambo,Population,1391247,-537488.625,1049648.375
+33,City of Johannesburg Metropolitan Municipality,Population,5858600,-537488.625,1049648.375
+34,City of Tshwane Metropolitan Municipality,Population,3877938,-537488.625,1049648.375
+35,Ekurhuleni Metropolitan Municipality,Population,3987743,-537488.625,1049648.375
+44,Ethekwini Metropolitan Municipality,Population,3853400,-537488.625,1049648.375
+61,Mopani,Population,1182698,-537488.625,1049648.375
+63,Sekhukhune,Population,1195309,-537488.625,1049648.375
+65,Vhembe,Population,1069966,-537488.625,1049648.375
+125,City of Cape Town Metropolitan Municipality,Population,4546050,-537488.625,1049648.375
+11,Nelson Mandela Bay Metropolitan Municipality,Population with access to water,1169085,-458691.75,921206.25
+33,City of Johannesburg Metropolitan Municipality,Population with access to water,5917763,-458691.75,921206.25
+34,City of Tshwane Metropolitan Municipality,Population with access to water,3794364,-458691.75,921206.25
+35,Ekurhuleni Metropolitan Municipality,Population with access to water,4028025,-458691.75,921206.25
+44,Ethekwini Metropolitan Municipality,Population with access to water,3871087,-458691.75,921206.25
+125,City of Cape Town Metropolitan Municipality,Population with access to water,4483276,-458691.75,921206.25
+3,Buffalo City Metropolitan Municipality,Population Reliable Supply,571873,-246491.625,522709.375
+11,Nelson Mandela Bay Metropolitan Municipality,Population Reliable Supply,1014139,-246491.625,522709.375
+19,Mangaung Metropolitan Municipality,Population Reliable Supply,575360,-246491.625,522709.375
+33,City of Johannesburg Metropolitan Municipality,Population Reliable Supply,4747224,-246491.625,522709.375
+34,City of Tshwane Metropolitan Municipality,Population Reliable Supply,3197543,-246491.625,522709.375
+35,Ekurhuleni Metropolitan Municipality,Population Reliable Supply,3367863,-246491.625,522709.375
+36,Emfuleni,Population Reliable Supply,744057,-246491.625,522709.375
+44,Ethekwini Metropolitan Municipality,Population Reliable Supply,2991816,-246491.625,522709.375
+48,Msunduzi,Population Reliable Supply,549969,-246491.625,522709.375
+61,Mopani,Population Reliable Supply,529323,-246491.625,522709.375
+62,Polokwane,Population Reliable Supply,574031,-246491.625,522709.375
+125,City of Cape Town Metropolitan Municipality,Population Reliable Supply,3802560,-246491.625,522709.375
+3,Buffalo City Metropolitan Municipality,Urban Population,465125,-158394.625,370288.375
+11,Nelson Mandela Bay Metropolitan Municipality,Urban Population,1202494,-158394.625,370288.375
+19,Mangaung Metropolitan Municipality,Urban Population,819702,-158394.625,370288.375
+22,Matjhabeng,Urban Population,450317,-158394.625,370288.375
+33,City of Johannesburg Metropolitan Municipality,Urban Population,5605145,-158394.625,370288.375
+34,City of Tshwane Metropolitan Municipality,Urban Population,3484206,-158394.625,370288.375
+35,Ekurhuleni Metropolitan Municipality,Urban Population,3472533,-158394.625,370288.375
+36,Emfuleni,Urban Population,801347,-158394.625,370288.375
+44,Ethekwini Metropolitan Municipality,Urban Population,3400718,-158394.625,370288.375
+48,Msunduzi,Urban Population,544239,-158394.625,370288.375
+68,City of Mbombela,Urban Population,492509,-158394.625,370288.375
+73,Emalahleni,Urban Population,404751,-158394.625,370288.375
+83,City of Matlosana,Urban Population,422515,-158394.625,370288.375
+92,Rustenburg,Urban Population,458403,-158394.625,370288.375
+125,City of Cape Town Metropolitan Municipality,Urban Population,4534445,-158394.625,370288.375
+3,Buffalo City Metropolitan Municipality,Urban Population with access to water,450270,-136839.5,322024.5
+11,Nelson Mandela Bay Metropolitan Municipality,Urban Population with access to water,1164095,-136839.5,322024.5
+19,Mangaung Metropolitan Municipality,Urban Population with access to water,824648,-136839.5,322024.5
+22,Matjhabeng,Urban Population with access to water,447193,-136839.5,322024.5
+33,City of Johannesburg Metropolitan Municipality,Urban Population with access to water,5661750,-136839.5,322024.5
+34,City of Tshwane Metropolitan Municipality,Urban Population with access to water,3407896,-136839.5,322024.5
+35,Ekurhuleni Metropolitan Municipality,Urban Population with access to water,3507607,-136839.5,322024.5
+36,Emfuleni,Urban Population with access to water,809438,-136839.5,322024.5
+44,Ethekwini Metropolitan Municipality,Urban Population with access to water,3418928,-136839.5,322024.5
+48,Msunduzi,Urban Population with access to water,548236,-136839.5,322024.5
+68,City of Mbombela,Urban Population with access to water,386374,-136839.5,322024.5
+73,Emalahleni,Urban Population with access to water,377449,-136839.5,322024.5
+74,Govan Mbeki,Urban Population with access to water,330784,-136839.5,322024.5
+83,City of Matlosana,Urban Population with access to water,427034,-136839.5,322024.5
+92,Rustenburg,Urban Population with access to water,448788,-136839.5,322024.5
+125,City of Cape Town Metropolitan Municipality,Urban Population with access to water,4471832,-136839.5,322024.5
+3,Buffalo City Metropolitan Municipality,Urban Population Reliable Supply,338003,-98454.125,235076.875
+11,Nelson Mandela Bay Metropolitan Municipality,Urban Population Reliable Supply,1009830,-98454.125,235076.875
+19,Mangaung Metropolitan Municipality,Urban Population Reliable Supply,560661,-98454.125,235076.875
+22,Matjhabeng,Urban Population Reliable Supply,388550,-98454.125,235076.875
+33,City of Johannesburg Metropolitan Municipality,Urban Population Reliable Supply,4541927,-98454.125,235076.875
+34,City of Tshwane Metropolitan Municipality,Urban Population Reliable Supply,2872286,-98454.125,235076.875
+35,Ekurhuleni Metropolitan Municipality,Urban Population Reliable Supply,2932645,-98454.125,235076.875
+36,Emfuleni,Urban Population Reliable Supply,691101,-98454.125,235076.875
+40,Mogale City,Urban Population Reliable Supply,244436,-98454.125,235076.875
+44,Ethekwini Metropolitan Municipality,Urban Population Reliable Supply,2653615,-98454.125,235076.875
+48,Msunduzi,Urban Population Reliable Supply,423531,-98454.125,235076.875
+68,City of Mbombela,Urban Population Reliable Supply,298156,-98454.125,235076.875
+74,Govan Mbeki,Urban Population Reliable Supply,241219,-98454.125,235076.875
+83,City of Matlosana,Urban Population Reliable Supply,342295,-98454.125,235076.875
+92,Rustenburg,Urban Population Reliable Supply,316510,-98454.125,235076.875
+125,City of Cape Town Metropolitan Municipality,Urban Population Reliable Supply,3792851,-98454.125,235076.875
+0,Alfred Nzo,Rural Population,782495,-320980.0,553188.0
+1,Amathole,Rural Population,690772,-320980.0,553188.0
+4,Chris Hani,Rural Population,629570,-320980.0,553188.0
+12,OR Tambo,Rural Population,1232829,-320980.0,553188.0
+50,Ugu,Rural Population,579028,-320980.0,553188.0
+52,Umkhanyakude,Rural Population,663148,-320980.0,553188.0
+55,Zululand,Rural Population,748105,-320980.0,553188.0
+57,Capricorn,Rural Population,844591,-320980.0,553188.0
+61,Mopani,Rural Population,1024368,-320980.0,553188.0
+63,Sekhukhune,Rural Population,1112789,-320980.0,553188.0
+65,Vhembe,Rural Population,889544,-320980.0,553188.0
+91,Ngaka Modiri Molema,Rural Population,672150,-320980.0,553188.0
+35,Ekurhuleni Metropolitan Municipality,Rural Population with access to water,520418,-288556.5,498303.5
+57,Capricorn,Rural Population with access to water,627782,-288556.5,498303.5
+61,Mopani,Rural Population with access to water,689035,-288556.5,498303.5
+63,Sekhukhune,Rural Population with access to water,669361,-288556.5,498303.5
+65,Vhembe,Rural Population with access to water,601813,-288556.5,498303.5
+91,Ngaka Modiri Molema,Rural Population with access to water,512205,-288556.5,498303.5
+34,City of Tshwane Metropolitan Municipality,Rural Population Reliable Supply,325257,-177027.0,308517.0
+35,Ekurhuleni Metropolitan Municipality,Rural Population Reliable Supply,435218,-177027.0,308517.0
+44,Ethekwini Metropolitan Municipality,Rural Population Reliable Supply,338201,-177027.0,308517.0
+55,Zululand,Rural Population Reliable Supply,329404,-177027.0,308517.0
+57,Capricorn,Rural Population Reliable Supply,422703,-177027.0,308517.0
+61,Mopani,Rural Population Reliable Supply,453402,-177027.0,308517.0
+62,Polokwane,Rural Population Reliable Supply,355358,-177027.0,308517.0
+63,Sekhukhune,Rural Population Reliable Supply,411661,-177027.0,308517.0
+65,Vhembe,Rural Population Reliable Supply,376528,-177027.0,308517.0
+91,Ngaka Modiri Molema,Rural Population Reliable Supply,322766,-177027.0,308517.0
+106,Khai-Ma,% Population Reliable Supply,0,16.0,122.0
+0,Alfred Nzo,% Urban Population Reliable Supply,15,28.375,115.375
+12,OR Tambo,% Urban Population Reliable Supply,26,28.375,115.375
+100,Joe Morolong,% Urban Population Reliable Supply,15,28.375,115.375
+106,Khai-Ma,% Urban Population Reliable Supply,0,28.375,115.375
+106,Khai-Ma,% Rural Population Reliable Supply,0,12.0,124.0

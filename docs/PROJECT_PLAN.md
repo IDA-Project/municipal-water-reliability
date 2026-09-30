@@ -1,5 +1,7 @@
 # Municipal Water Supply Reliability in South Africa
 
+> Status update (29 September 2026): Questions 1 through 2.4 are now standardised and implemented. See `REQUIREMENTS_CHECKLIST.md`, `QUESTIONS_1_TO_2_4.md`, and `reports/q2/` for current evidence. This file retains the original team plan and later-question roadmap.
+
 ## Project plan
 
 Prepared 29 September 2026. Course: IDA117V, semester 2, 2026.

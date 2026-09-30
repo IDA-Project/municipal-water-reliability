@@ -1,0 +1,34 @@
+{
+  "rows": 144,
+  "columns_after_cleaning": 14,
+  "unique_wsa_names": 144,
+  "duplicate_rows": 0,
+  "rows_with_duplicate_wsa_name": 0,
+  "target_definition": "1 when % Population Reliable Supply < 60; otherwise 0",
+  "class_balance": {
+    "0": {
+      "count": 105,
+      "percent": 72.91666666666666
+    },
+    "1": {
+      "count": 39,
+      "percent": 27.083333333333332
+    }
+  },
+  "missing_cells": 45,
+  "invalid_findings": 57,
+  "iqr_outlier_findings": 109,
+  "leakage_columns_excluded": [
+    "Population Reliable Supply",
+    "% Population Reliable Supply",
+    "Urban Population Reliable Supply",
+    "% Urban Population Reliable Supply",
+    "Rural Population Reliable Supply",
+    "% Rural Population Reliable Supply"
+  ],
+  "notes": [
+    "IQR flags are review prompts, not automatic deletion rules.",
+    "Missing target-source rows cannot be used for stratified modelling.",
+    "The WSA name is an identifier and is not encoded as a predictor."
+  ]
+}
