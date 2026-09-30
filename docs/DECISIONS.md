@@ -8,6 +8,6 @@
 | 2026-09-29 | Treat the 26 September WSA extract as modelling data and the July national table as a reconciliation control, not extra observations | Team/user | Implemented in the Q2 workflow |
 | 2026-09-29 | Exclude WSA name and all reliable-supply counts/percentages from predictors | Team | Leakage control implemented structurally in feature engineering |
 | Pending | Obtain lecturer approval for the DWS NIWIS source and 60% team-defined target | TBD | Source terms verified; approval evidence not supplied |
-| Pending | Select the second neural architecture required by Question 3 | TBD | Outside the current Q1-Q2.4 scope |
+| 2026-09-30 | Train Logistic Regression and Random Forest as the two traditional models, and an MLP plus a residual tabular network as the two neural models | Team | Implemented for Q3.2 on the fixed development split; lecturer approval for the second neural architecture remains to be recorded |
 | Pending | Clarify template mark inconsistencies | TBD | Open |
 | Pending | Select remote host and repository visibility | TBD | Open |
