@@ -1,0 +1,6 @@
+model_key,model,estimator_class,declared_family,verified_family,family_label_matches_code,counts_as_substantive,template_requirement,approval_status
+majority_baseline,Majority-class baseline,DummyClassifier,naive baseline,naive baseline,True,False,Q3.1 baseline (does not count towards the four),
+logistic_regression,Logistic Regression,LogisticRegression,traditional,traditional,True,True,Template traditional example: Logistic Regression,
+random_forest,Random Forest,RandomForestClassifier,traditional,traditional,True,True,Template traditional example: Decision Tree / Random Forest,
+mlp,Multilayer Perceptron,MLPClassifier,neural,neural,True,True,Template requirement: MLP,
+residual_tabular_nn,Residual Tabular Neural Network,TabularResidualClassifier,neural,neural,True,True,Template requirement: task-appropriate second architecture,pending: lecturer approval of the second neural architecture is not recorded
