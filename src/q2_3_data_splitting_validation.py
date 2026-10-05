@@ -7,7 +7,7 @@ from sklearn.model_selection import (train_test_split, RepeatedStratifiedKFold,
 SEED = 42
 PATH = r"C:\Users\Sekomane\Desktop\Data ScienceTUT\NIWIS_Water Supply Reliability - Population_26-Sep-2026.csv"
 
-# Load the data and turn the text columns
+# Load the data and turn the text columns 
 raw = pd.read_csv(PATH).drop(columns="Unnamed: 0")
 raw.columns = [" ".join(c.split()) for c in raw.columns]
 for c in raw.columns[1:]:
