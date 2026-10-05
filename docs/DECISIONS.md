@@ -11,3 +11,4 @@
 | 2026-09-30 | Train Logistic Regression and Random Forest as the two traditional models, and an MLP plus a residual tabular network as the two neural models | Team | Implemented for Q3.2 on the fixed development split; lecturer approval for the second neural architecture remains to be recorded |
 | Pending | Clarify template mark inconsistencies | TBD | Open |
 | Pending | Select remote host and repository visibility | TBD | Open |
+| 2026-10-04 | Q3.3 model-family compliance check added (`model_families.py`); approval of the residual tabular network still outstanding | Team | `reports/q3/q3_3_requirement_checks.json` reports 7 of 8 checks passing; approval check OPEN |
