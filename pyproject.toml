@@ -21,6 +21,7 @@ dev = ["pytest>=8,<10"]
 
 [project.scripts]
 water-reliability-q2 = "water_reliability.workflow:main"
+water-reliability-q3 = "water_reliability.train_models:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -32,4 +33,3 @@ where = ["src"]
 addopts = "-q"
 pythonpath = ["src"]
 testpaths = ["tests"]
-

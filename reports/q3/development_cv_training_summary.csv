@@ -1,0 +1,6 @@
+model_key,model,family,substantive,cv_fits,mean_train_macro_f1,mean_validation_macro_f1,std_validation_macro_f1,artifact
+majority_baseline,Majority-class baseline,naive baseline,False,25,0.42210691823899366,0.42205128205128206,0.006019045308121059,models\q3\majority_baseline.joblib
+logistic_regression,Logistic Regression,traditional,True,25,0.8565649361084524,0.8003870177992569,0.08445680144877722,models\q3\logistic_regression.joblib
+random_forest,Random Forest,traditional,True,25,0.979873283085126,0.7926190630573933,0.07099650737761838,models\q3\random_forest.joblib
+mlp,Multilayer Perceptron,neural,True,25,0.8451477306465361,0.7863774657360177,0.1096047200205636,models\q3\mlp.joblib
+residual_tabular_nn,Residual Tabular Neural Network,neural,True,25,0.8770969551985311,0.7871654786402054,0.07396241138907218,models\q3\residual_tabular_nn.joblib
