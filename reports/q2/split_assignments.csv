@@ -1,0 +1,145 @@
+row_index,WSA Name,low_reliability,split,province_sensitivity_group
+0,Alfred Nzo,1,development,EC
+1,Amathole,1,development,EC
+2,Blue Crane Route,0,development,EC
+3,Buffalo City Metropolitan Municipality,0,test,EC
+4,Chris Hani,1,development,EC
+5,Dr Beyers Naudé,0,test,EC
+6,Joe Gqabi,1,development,EC
+7,Kouga,0,development,EC
+8,Koukamma,0,development,EC
+9,Makana,0,development,EC
+10,Ndlambe,0,development,EC
+11,Nelson Mandela Bay Metropolitan Municipality,0,development,EC
+12,OR Tambo,1,test,EC
+13,Sundays River Valley,1,development,EC
+14,Dihlabeng,0,development,EC
+15,Kopanong,0,development,FS
+16,Letsemeng,0,development,FS
+17,Mafube,0,development,FS
+18,Maluti-A-Phofung,1,test,FS
+19,Mangaung Metropolitan Municipality,0,development,FS
+20,Mantsopa,1,test,FS
+21,Masilonyana,1,development,FS
+22,Matjhabeng,0,development,FS
+23,Metsimaholo,0,test,FS
+24,Mohokare,1,development,FS
+25,Moqhaka,0,development,FS
+26,Nala,0,development,FS
+27,Ngwathe,0,development,FS
+28,Nketoana,0,development,FS
+29,Phumelela,0,development,FS
+30,Setsoto,1,development,FS
+31,Tokologo,0,test,FS
+32,Tswelopele,0,test,FS
+33,City of Johannesburg Metropolitan Municipality,0,development,GP
+34,City of Tshwane Metropolitan Municipality,0,test,GP
+35,Ekurhuleni Metropolitan Municipality,0,development,GP
+36,Emfuleni,0,development,GP
+37,Lesedi,0,development,GP
+38,Merafong City,0,development,GP
+39,Midvaal,0,development,GP
+40,Mogale City,0,test,GP
+41,Rand West City,0,development,GP
+42,Amajuba,0,development,KZN
+43,City of uMhlathuze,0,development,KZN
+44,Ethekwini Metropolitan Municipality,0,development,KZN
+45,Harry Gwala,1,development,KZN
+46,iLembe,1,development,KZN
+47,King Cetshwayo,1,development,KZN
+48,Msunduzi,0,development,KZN
+49,Newcastle,0,development,KZN
+50,Ugu,1,development,KZN
+51,Umgungundlovu,1,development,KZN
+52,Umkhanyakude,1,test,KZN
+53,Umzinyathi,1,development,KZN
+54,Uthukela,1,development,KZN
+55,Zululand,1,development,KZN
+56,Bela-Bela,0,development,LP
+57,Capricorn,1,development,LP
+58,Lephalale,1,development,LP
+59,Modimolle-Mookgophong,1,development,LP
+60,Mogalakwena,0,test,LP
+61,Mopani,1,development,LP
+62,Polokwane,0,development,LP
+63,Sekhukhune,1,development,LP
+64,Thabazimbi,0,development,LP
+65,Vhembe,1,development,LP
+66,Bushbuckridge,1,development,MP
+67,Chief Albert Luthuli,1,test,MP
+68,City of Mbombela,0,development,MP
+69,Dipaleseng,0,development,MP
+70,Dr JS Moroka,0,development,MP
+71,Dr Pixley Ka Isaka Seme,0,development,MP
+72,Emakhazeni,0,development,MP
+73,Emalahleni,1,development,MP
+74,Govan Mbeki,0,development,MP
+75,Lekwa,0,development,MP
+76,Mkhondo,0,development,MP
+77,Msukaligwa,0,development,MP
+78,Nkomazi,0,development,MP
+79,Steve Tshwete,0,development,MP
+80,Thaba Chweu,0,test,MP
+81,Thembisile Hani,1,development,MP
+82,Victor Khanye,0,test,MP
+83,City of Matlosana,0,development,NW
+84,Dr Ruth Segomotsi Mompati,1,development,NW
+85,JB Marks,0,development,NW
+86,Kgetlengrivier,1,development,NW
+87,Madibeng,0,development,NW
+88,Maquassi Hills,0,development,NW
+89,Moretele,1,test,NW
+90,Moses Kotane,1,development,NW
+91,Ngaka Modiri Molema,1,test,NW
+92,Rustenburg,0,development,NW
+93,!Kheis,0,development,NC
+94,Dawid Kruiper,0,development,NC
+95,Dikgatlong,0,test,NC
+96,Emthanjeni,0,development,NC
+97,Gamagara,0,development,NC
+98,Ga-Segonyana,1,development,NC
+99,Hantam,0,development,NC
+100,Joe Morolong,1,test,NC
+101,Kai !Garib,0,development,NC
+102,Kamiesberg,0,development,NC
+103,Kareeberg,0,development,NC
+104,Karoo Hoogland,0,development,NC
+105,Kgatelopele,0,development,NC
+106,Khai-Ma,1,development,NC
+107,Magareng,1,development,NC
+108,Nama Khoi,0,development,NC
+109,Phokwane,0,development,NC
+110,Renosterberg,0,test,NC
+111,Richtersveld,0,development,NC
+112,Siyancuma,0,development,NC
+113,Siyathemba,0,test,NC
+114,Sol Plaatje,0,development,NC
+115,Thembelihle,0,development,NC
+116,Tsantsabane,0,development,NC
+117,Ubuntu,0,development,NC
+118,Umsobomvu,0,development,NC
+119,Beaufort West,0,development,WC
+120,Bergrivier,0,development,WC
+121,Bitou,0,test,WC
+122,Breede Valley,0,development,WC
+123,Cape Agulhas,0,development,WC
+124,Cederberg,0,development,WC
+125,City of Cape Town Metropolitan Municipality,0,test,WC
+126,Drakenstein,0,test,WC
+127,George,0,test,WC
+128,Hessequa,0,development,WC
+129,Kannaland,0,development,WC
+130,Knysna,0,development,WC
+131,Laingsburg,0,test,WC
+132,Langeberg,0,test,WC
+133,Matzikama,0,development,WC
+134,Mossel Bay,0,test,WC
+135,Oudtshoorn,0,development,WC
+136,Overstrand,0,development,WC
+137,Prince Albert,0,development,WC
+138,Saldanha Bay,0,development,WC
+139,Stellenbosch,0,development,WC
+140,Swartland,0,development,WC
+141,Swellendam,0,test,WC
+142,Theewaterskloof,0,development,WC
+143,Witzenberg,0,development,WC

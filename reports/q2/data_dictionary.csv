@@ -1,0 +1,15 @@
+column,description,parsed_dtype,role
+WSA Name,Name of the Water Services Authority (WSA).,string,identifier (excluded from modelling)
+Population,Total population represented by the WSA record.,Int64,candidate raw predictor
+Population with access to water,Population with access to water infrastructure.,Int64,candidate raw predictor
+Population Reliable Supply,Population recorded as receiving reliable water supply.,Int64,target-derived leakage (excluded from modelling)
+% Population Reliable Supply,"Population receiving reliable supply, as a percentage.",Int64,target source (Class 1 when < 60%)
+Urban Population,Urban population represented by the WSA record.,Int64,candidate raw predictor
+Urban Population with access to water,Urban population with access to water infrastructure.,Int64,candidate raw predictor
+Urban Population Reliable Supply,Urban population recorded as receiving reliable supply.,Int64,target-derived leakage (excluded from modelling)
+% Urban Population Reliable Supply,"Urban population receiving reliable supply, as a percentage.",Int64,target-derived leakage (excluded from modelling)
+Rural Population,Rural population represented by the WSA record.,Int64,candidate raw predictor
+Rural Population with access to water,Rural population with access to water infrastructure.,Int64,candidate raw predictor
+Rural Population Reliable Supply,Rural population recorded as receiving reliable supply.,Int64,target-derived leakage (excluded from modelling)
+% Rural Population Reliable Supply,"Rural population receiving reliable supply, as a percentage.",Int64,target-derived leakage (excluded from modelling)
+low_reliability,Binary label: 1 = low reliability (< 60%); 0 = reliable (>= 60%).,Int64,model target

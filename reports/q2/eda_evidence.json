@@ -1,0 +1,15 @@
+{
+  "class_counts": {
+    "0": 105,
+    "1": 39
+  },
+  "largest_missing_percent": 6.25,
+  "largest_missing_column": "Population with access to water",
+  "access_reliability_correlation": 0.7590614270621292,
+  "rural_share_reliability_correlation": -0.5973053450275255,
+  "mean_reliable_supply_percent": {
+    "Overall": 68.00694444444444,
+    "Urban": 69.59154929577464,
+    "Rural": 66.72992700729927
+  }
+}

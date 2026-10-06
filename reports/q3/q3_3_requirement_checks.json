@@ -1,0 +1,49 @@
+{
+  "scope": "Question 3.3 model-family selection",
+  "all_checks_passed": false,
+  "blocking_items": [
+    "second_architecture_approval_recorded"
+  ],
+  "checks": [
+    {
+      "check": "at_least_four_substantive_models",
+      "passed": true,
+      "detail": "4 substantive models"
+    },
+    {
+      "check": "at_least_two_traditional_from_template_list",
+      "passed": true,
+      "detail": "2 traditional: ['Decision Tree / Random Forest', 'Logistic Regression']"
+    },
+    {
+      "check": "at_least_two_neural",
+      "passed": true,
+      "detail": "2 neural: ['MLPClassifier', 'TabularResidualClassifier']"
+    },
+    {
+      "check": "mlp_present",
+      "passed": true,
+      "detail": "MLPClassifier required by the template"
+    },
+    {
+      "check": "second_architecture_is_distinct_from_mlp",
+      "passed": true,
+      "detail": "second architecture: ['TabularResidualClassifier']"
+    },
+    {
+      "check": "naive_baseline_not_counted",
+      "passed": true,
+      "detail": "baseline excluded from the substantive count"
+    },
+    {
+      "check": "declared_families_match_estimator_types",
+      "passed": true,
+      "detail": "family labels verified against real estimator classes"
+    },
+    {
+      "check": "second_architecture_approval_recorded",
+      "passed": false,
+      "detail": "pending: lecturer approval of the second neural architecture is not recorded"
+    }
+  ]
+}
