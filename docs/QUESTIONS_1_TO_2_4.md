@@ -6,7 +6,7 @@ South African communities experience unequal access to reliable municipal water 
 
 The unit of prediction is one WSA in the supplied NIWIS extract. Predictors are aggregate population, water-access, and urban/rural composition measures available independently of the reliability outcome. `Class 1 (low reliability)` means that fewer than 60% of the WSA population has reliable supply. `Class 0 (reliable)` means 60% or more. The threshold was fixed before model fitting and matches the team's Q2.3 answer.
 
-The extract is a cross-sectional snapshot dated 26 September 2026. The prediction horizon is therefore the conditions represented by that snapshot, not the next month. Without earlier predictors and later interruption outcomes, the project must not claim to forecast future failures.
+The export filename is dated 26 September 2026; this does not establish the underlying measurement period. The prediction horizon is the conditions represented by this cross-sectional extract, not the next month. Without earlier predictors and later interruption outcomes, the project must not claim to forecast future failures.
 
 ## 1.2 Success measures and error costs
 

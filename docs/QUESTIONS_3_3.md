@@ -1,3 +1,5 @@
+> Historical section retained for traceability. The current full-project answers and consistent experiment are in [QA_CORRECTED_ANSWERS.md](QA_CORRECTED_ANSWERS.md) and [QA_REVIEW.md](QA_REVIEW.md). Do not combine older metrics or scope statements with the corrected QA results.
+
 # Question 3.3: model families
 
 Q3.3 asks for traditional models drawn from the template's examples, plus an MLP and one task-appropriate second neural architecture. The selection is implemented in `src/water_reliability/model_families.py`, which inspects the real estimator classes in `models.build_model_specs()` and writes `reports/q3/q3_3_model_family_compliance.csv` and `reports/q3/q3_3_requirement_checks.json`.

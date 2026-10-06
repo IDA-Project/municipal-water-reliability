@@ -27,6 +27,8 @@ def make_holdout_split(frame: pd.DataFrame, test_size: float = 0.20) -> pd.DataF
     eligible = frame.loc[frame[TARGET_COLUMN].notna()].copy()
     if eligible.empty:
         raise ValueError("No rows have a usable target.")
+    if eligible[ID_COLUMN].isna().any() or eligible[ID_COLUMN].duplicated().any():
+        raise ValueError("WSA identifiers must be present and unique before splitting.")
     if eligible[TARGET_COLUMN].nunique() < 2:
         raise ValueError("A stratified split requires both target classes.")
 

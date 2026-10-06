@@ -2,6 +2,12 @@
 
 Original supplied files are preserved locally and excluded from Git. Verify source URLs, ownership, collection period, reuse terms and lecturer approval before modelling or redistribution. Hashes identify the exact supplied copies.
 
+## QA verification — 6 October 2026
+
+Both original CSVs were supplied again by the user and their SHA256 hashes match this register exactly. All nine remote branch tips and available Git history were searched; neither source CSV was committed. Files are retained unchanged in ignored `data/raw/`.
+
+The current cloud network proxy returned HTTP 403 while connecting to `www.dws.gov.za`, so the publisher terms recorded below could not be independently rechecked in this QA session. Academic use permission does not by itself establish permission to publish a raw-data copy. Conversely, the earlier repository claim that DWS explicitly forbids redistribution is not established by the recorded summary of its terms. Verify and retain the actual applicable terms before changing the raw-data Git policy. The export dates are not verified collection periods. Written lecturer approval for this source route remains unrecorded.
+
 ## NIWIS_Water Supply Reliability - Population_26-Sep-2026.csv
 
 - Origin: file supplied by the team; exported from the Department of Water and Sanitation (DWS) National Integrated Water Information System (NIWIS) Water Supply Reliability dashboard.

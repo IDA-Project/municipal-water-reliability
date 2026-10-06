@@ -1,3 +1,5 @@
+> Historical section retained for traceability. The current full-project answers and consistent experiment are in [QA_CORRECTED_ANSWERS.md](QA_CORRECTED_ANSWERS.md) and [QA_REVIEW.md](QA_REVIEW.md). Do not combine older metrics or scope statements with the corrected QA results.
+
 # Requirements checklist: Questions 1 through 2.4
 
 The assignment PDF is the source of the question wording. The team's answers are standardised to the concrete Q2.3 design: one Water Services Authority (WSA) per row, a cross-sectional binary target, and `Class 1 = reliable supply below 60%`.

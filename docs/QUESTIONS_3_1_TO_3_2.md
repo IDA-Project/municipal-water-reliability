@@ -1,3 +1,5 @@
+> Historical section retained for traceability. The current full-project answers and consistent experiment are in [QA_CORRECTED_ANSWERS.md](QA_CORRECTED_ANSWERS.md) and [QA_REVIEW.md](QA_REVIEW.md). Do not combine older metrics or scope statements with the corrected QA results.
+
 # Questions 3.1 and 3.2: model training
 
 This answer continues the team's WSA-level binary classification design from Questions 1–2.4. The target is `low_reliability`, where `1` means that less than 60% of the WSA population receives reliable water supply and `0` means that at least 60% receives reliable supply.

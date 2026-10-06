@@ -55,5 +55,7 @@ class ReliabilityFeatureEngineer(BaseEstimator, TransformerMixin):
             ["urban", "rural", "balanced"],
             default=None,
         )
+        # Use the same missing marker across pandas 2/3 and sklearn versions.
+        result["dominant_population_group"] = result["dominant_population_group"].astype(object)
+        result.loc[result["dominant_population_group"].isna(), "dominant_population_group"] = np.nan
         return result
-

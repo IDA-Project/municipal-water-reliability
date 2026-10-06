@@ -65,8 +65,17 @@ def _load_development_data(
         raise ValueError(f"Split assignments are missing columns: {missing}")
 
     row_index = assignments["row_index"].astype(int)
+    if not np.array_equal(row_index.to_numpy(), assignments["row_index"].to_numpy()):
+        raise ValueError("Split row indices must be integers.")
     if row_index.duplicated().any():
         raise ValueError("Split assignments contain duplicate row indices.")
+    if not assignments["split"].isin(["development", "test"]).all():
+        raise ValueError("Split assignments must use only development and test labels.")
+    eligible = cleaned.loc[cleaned[TARGET_COLUMN].notna()]
+    if set(row_index) != set(eligible.index):
+        raise ValueError("Split assignments must cover every row with a usable target exactly once.")
+    if eligible[ID_COLUMN].isna().any() or eligible[ID_COLUMN].duplicated().any():
+        raise ValueError("WSA identifiers must be present and unique before splitting.")
     if not set(row_index).issubset(set(cleaned.index)):
         raise ValueError("Split assignments refer to rows outside the cleaned dataset.")
 

@@ -1,0 +1,80 @@
+{
+  "majority_baseline": {
+    "macro_f1_95_percentile_interval": [
+      0.42,
+      0.42
+    ],
+    "class_1_recall_95_exact_interval": [
+      0.0,
+      0.36941664755281917
+    ],
+    "bootstrap_samples": 500,
+    "seed": 42,
+    "limitation": "Small-sample, conditional intervals; spatial dependence is not accounted for."
+  },
+  "logistic_regression": {
+    "macro_f1_95_percentile_interval": [
+      0.6073500967117988,
+      0.9550387596899225
+    ],
+    "class_1_recall_95_exact_interval": [
+      0.24486321636655167,
+      0.9147665858627464
+    ],
+    "bootstrap_samples": 500,
+    "seed": 42,
+    "limitation": "Small-sample, conditional intervals; spatial dependence is not accounted for."
+  },
+  "random_forest": {
+    "macro_f1_95_percentile_interval": [
+      0.6073500967117988,
+      0.9550387596899225
+    ],
+    "class_1_recall_95_exact_interval": [
+      0.24486321636655167,
+      0.9147665858627464
+    ],
+    "bootstrap_samples": 500,
+    "seed": 42,
+    "limitation": "Small-sample, conditional intervals; spatial dependence is not accounted for."
+  },
+  "mlp": {
+    "macro_f1_95_percentile_interval": [
+      0.5607841117216118,
+      0.9381314599483196
+    ],
+    "class_1_recall_95_exact_interval": [
+      0.24486321636655167,
+      0.9147665858627464
+    ],
+    "bootstrap_samples": 500,
+    "seed": 42,
+    "limitation": "Small-sample, conditional intervals; spatial dependence is not accounted for."
+  },
+  "residual_tabular_nn": {
+    "macro_f1_95_percentile_interval": [
+      0.5341901154401154,
+      0.9058441558441559
+    ],
+    "class_1_recall_95_exact_interval": [
+      0.15701277048705797,
+      0.842987229512942
+    ],
+    "bootstrap_samples": 500,
+    "seed": 42,
+    "limitation": "Small-sample, conditional intervals; spatial dependence is not accounted for."
+  },
+  "optimized_champion": {
+    "macro_f1_95_percentile_interval": [
+      0.6073500967117988,
+      0.9550387596899225
+    ],
+    "class_1_recall_95_exact_interval": [
+      0.24486321636655167,
+      0.9147665858627464
+    ],
+    "bootstrap_samples": 500,
+    "seed": 42,
+    "limitation": "Small-sample, conditional intervals; spatial dependence is not accounted for."
+  }
+}
