@@ -1,0 +1,153 @@
+{
+  "scope": "Questions 3.1 and 3.2 only",
+  "random_state": 42,
+  "data_path": "data\\raw\\NIWIS_Water Supply Reliability - Population_26-Sep-2026.csv",
+  "split_assignments": "reports\\q2\\split_assignments.csv",
+  "development_rows": 115,
+  "development_class_counts": {
+    "0": 84,
+    "1": 31
+  },
+  "development_ids_sha256": "ff943f4b10c09ae7cb9baea4b0fd31186361758fdf033c59bf510c18bbed2e14",
+  "test_rows_reserved": 29,
+  "test_rows_used_for_training": false,
+  "test_predictions_created": false,
+  "test_metrics_computed": false,
+  "validation_protocol": {
+    "type": "RepeatedStratifiedKFold",
+    "splits": 5,
+    "repeats": 5,
+    "identical_split_indices_for_every_model": true,
+    "primary_sanity_score": "macro-F1"
+  },
+  "models": [
+    {
+      "key": "majority_baseline",
+      "label": "Majority-class baseline",
+      "family": "naive baseline",
+      "substantive": false,
+      "description": "Ignores all predictors and always returns the training-fold majority class.",
+      "estimator": "DummyClassifier",
+      "parameters": {
+        "constant": null,
+        "random_state": 42,
+        "strategy": "most_frequent"
+      },
+      "artifact": "models\\q3\\majority_baseline.joblib"
+    },
+    {
+      "key": "logistic_regression",
+      "label": "Logistic Regression",
+      "family": "traditional",
+      "substantive": true,
+      "description": "Regularised linear probability boundary for a transparent tabular comparator.",
+      "estimator": "LogisticRegression",
+      "parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 2000,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": 42,
+        "solver": "liblinear",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "artifact": "models\\q3\\logistic_regression.joblib"
+    },
+    {
+      "key": "random_forest",
+      "label": "Random Forest",
+      "family": "traditional",
+      "substantive": true,
+      "description": "Non-linear tree ensemble that can capture interactions without feature linearity.",
+      "estimator": "RandomForestClassifier",
+      "parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 300,
+        "n_jobs": 1,
+        "oob_score": false,
+        "random_state": 42,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "artifact": "models\\q3\\random_forest.joblib"
+    },
+    {
+      "key": "mlp",
+      "label": "Multilayer Perceptron",
+      "family": "neural",
+      "substantive": true,
+      "description": "Required feed-forward MLP with two hidden layers and early stopping.",
+      "estimator": "MLPClassifier",
+      "parameters": {
+        "activation": "relu",
+        "alpha": 0.001,
+        "batch_size": 16,
+        "beta_1": 0.9,
+        "beta_2": 0.999,
+        "early_stopping": true,
+        "epsilon": 1e-08,
+        "hidden_layer_sizes": [
+          32,
+          16
+        ],
+        "learning_rate": "constant",
+        "learning_rate_init": 0.001,
+        "max_fun": 15000,
+        "max_iter": 500,
+        "momentum": 0.9,
+        "n_iter_no_change": 30,
+        "nesterovs_momentum": true,
+        "power_t": 0.5,
+        "random_state": 42,
+        "shuffle": true,
+        "solver": "adam",
+        "tol": 0.0001,
+        "validation_fraction": 0.2,
+        "verbose": false,
+        "warm_start": false
+      },
+      "artifact": "models\\q3\\mlp.joblib"
+    },
+    {
+      "key": "residual_tabular_nn",
+      "label": "Residual Tabular Neural Network",
+      "family": "neural",
+      "substantive": true,
+      "description": "Task-appropriate dense residual network for the engineered tabular features.",
+      "estimator": "TabularResidualClassifier",
+      "parameters": {
+        "alpha": 0.001,
+        "batch_size": 16,
+        "dropout": 0.1,
+        "hidden_dim": 24,
+        "learning_rate": 0.001,
+        "max_epochs": 250,
+        "n_iter_no_change": 25,
+        "random_state": 42,
+        "tol": 0.0001,
+        "validation_fraction": 0.2
+      },
+      "artifact": "models\\q3\\residual_tabular_nn.joblib"
+    }
+  ],
+  "approval_note": "The residual tabular neural network is the task-appropriate second neural architecture selected for implementation; lecturer approval remains to be recorded."
+}

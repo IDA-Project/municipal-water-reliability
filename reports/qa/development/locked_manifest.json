@@ -1,0 +1,25 @@
+{
+  "data_sha256": "009db9fdc34f176a1df9c6add4a57a6422b108cef989e633da4801216e869b59",
+  "assignments_sha256": "d702cbbf37115353c42a69b9dee6bfecaa6fb70480123e9f97e4a06416b1e428",
+  "champion": "logistic_regression",
+  "comparator": "random_forest",
+  "selection_metric": "development repeated-CV macro-F1",
+  "folds": 25,
+  "best_parameters": {
+    "model__C": 1,
+    "model__l1_ratio": 0
+  },
+  "optimized_cv_macro_f1": 0.8003870177992569,
+  "original_cv_macro_f1": 0.8003870177992569,
+  "search_selection_bias": "Best CV score is optimistic because the same folds selected hyperparameters.",
+  "test_status": "Already disclosed in original team notebooks; QA rerun is not an untouched test.",
+  "python": "3.12.14",
+  "artifact_sha256": {
+    "random_forest.joblib": "5c818842f5daec5dcfb91162e3ed6116f80f1d8f9ff81a47ddc4a0402a1b7120",
+    "majority_baseline.joblib": "e995403aa104ddd1f8f6abc956c4f8908647df6888958fa965423634cfe9813a",
+    "logistic_regression.joblib": "c2b3ada0d1d29abdd0cf5f0d26bd298bd9fbd620f6196d55255ba246a00e4a7d",
+    "residual_tabular_nn.joblib": "b4bbc4dd9bb93f5559d476802c4f08d58c0578f5c9f4462369d5fe61233d8d2e",
+    "mlp.joblib": "1b8e448e250cceb3e15dd1c8b472b3fe33545e7edf07007dd59416434722b25b",
+    "optimized_champion.joblib": "ec191f3cc33eae4ce4a8e4c7c83c4866ffd8d8c88a1630055681db7d49965f28"
+  }
+}

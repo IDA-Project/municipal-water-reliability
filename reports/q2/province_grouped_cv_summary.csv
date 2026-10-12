@@ -1,0 +1,6 @@
+fold,validation_rows,validation_positives,held_out_provinces
+1,22,3,NC
+2,26,8,"EC, MP"
+3,30,8,"KZN, WC"
+4,21,6,"FS, NW"
+5,16,6,"GP, LP"

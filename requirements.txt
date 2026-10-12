@@ -1,0 +1,2 @@
+# Tested dependencies and editable package for application startup.
+-r requirements-qa.txt
