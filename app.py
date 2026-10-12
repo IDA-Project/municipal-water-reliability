@@ -1,14 +1,18 @@
 """Streamlit interface for the corrected locked water-reliability pipeline."""
+
 from pathlib import Path
 import logging
+import sys
+
+ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "src"))
 
 import streamlit as st
 
 from water_reliability.constants import SAFE_RAW_FEATURES
 from water_reliability.inference import load_pipeline, predict, validate_inputs
 
-ROOT = Path(__file__).resolve().parent
-MODEL_PATH = ROOT / 'artifacts' / 'water_reliability_pipeline.joblib'
+MODEL_PATH = ROOT / "artifacts" / "water_reliability_pipeline.joblib"
 LOGGER = logging.getLogger(__name__)
 
 st.set_page_config(page_title='Water Reliability Predictor', page_icon='💧', layout='centered')
