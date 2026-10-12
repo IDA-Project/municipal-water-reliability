@@ -1,0 +1,18 @@
+{
+  "sha256": "ec191f3cc33eae4ce4a8e4c7c83c4866ffd8d8c88a1630055681db7d49965f28",
+  "champion": "logistic_regression",
+  "runtime_versions": {
+    "scikit-learn": "1.9.1",
+    "imbalanced-learn": "0.14.2",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  },
+  "data_sha256": "009db9fdc34f176a1df9c6add4a57a6422b108cef989e633da4801216e869b59",
+  "assignments_sha256": "d702cbbf37115353c42a69b9dee6bfecaa6fb70480123e9f97e4a06416b1e428",
+  "classes": {
+    "0": "Reliable supply at least 60%",
+    "1": "Reliable supply below 60%"
+  },
+  "scope": "Academic cross-sectional prototype; QA holdout was previously disclosed."
+}

@@ -1,0 +1,23 @@
+{
+  "table_rows_champion_correct_wrong_columns_comparator_correct_wrong": [
+    [
+      25,
+      0
+    ],
+    [
+      0,
+      4
+    ]
+  ],
+  "discordant_cases": 0,
+  "exact_binomial_p_value": 1.0,
+  "alpha": 0.05,
+  "reject_equal_error_rates": false,
+  "null": "Equal marginal error probabilities on paired cases",
+  "alternative": "Different marginal error probabilities on paired cases",
+  "interpretation": "Failure to reject does not establish equivalence or equal performance.",
+  "champion": "logistic_regression",
+  "comparator": "random_forest",
+  "test_status": "Already disclosed in original team notebooks; QA rerun is not an untouched test.",
+  "cases": 29
+}

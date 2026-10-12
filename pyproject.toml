@@ -14,14 +14,18 @@ dependencies = [
   "numpy>=1.26,<3",
   "pandas>=2.2,<4",
   "scikit-learn>=1.5,<2",
+  "scipy>=1.11.4,<2",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10"]
+report = ["reportlab>=4,<5"]
+app = ["streamlit>=1.40,<2"]
 
 [project.scripts]
 water-reliability-q2 = "water_reliability.workflow:main"
 water-reliability-q3 = "water_reliability.train_models:main"
+water-reliability-assessment = "water_reliability.assessment:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

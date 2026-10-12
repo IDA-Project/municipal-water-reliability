@@ -114,7 +114,8 @@ def clean_raw_data(raw: pd.DataFrame) -> pd.DataFrame:
 
     target_source = frame[TARGET_SOURCE_COLUMN]
     frame[TARGET_COLUMN] = pd.Series(pd.NA, index=frame.index, dtype="Int64")
-    known = target_source.notna()
+    # Invalid percentages must not silently become valid training labels.
+    known = target_source.between(0, 100).fillna(False)
     frame.loc[known, TARGET_COLUMN] = (
         target_source.loc[known] < TARGET_THRESHOLD
     ).astype("int64")

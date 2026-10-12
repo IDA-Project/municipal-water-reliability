@@ -11,6 +11,7 @@ from sklearn.base import BaseEstimator, ClassifierMixin
 from sklearn.dummy import DummyClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.utils.validation import check_array, check_is_fitted, check_X_y
@@ -189,7 +190,7 @@ class TabularResidualClassifier(ClassifierMixin, BaseEstimator):
                 np.sqrt(second_corrected) + epsilon
             )
 
-    def fit(self, X: np.ndarray, y: np.ndarray) -> "TabularResidualClassifier":
+    def fit(self, X: np.ndarray, y: np.ndarray, validation_data=None) -> "TabularResidualClassifier":
         X_checked, y_checked = check_X_y(X, y, dtype=np.float64, accept_sparse=False)
         unique = np.unique(y_checked)
         if not np.array_equal(unique, np.array([0, 1])):
@@ -207,7 +208,10 @@ class TabularResidualClassifier(ClassifierMixin, BaseEstimator):
             self.validation_fraction > 0
             and np.min(np.bincount(y_checked.astype(int))) >= 2
         )
-        if can_validate:
+        if validation_data is not None:
+            X_train, y_train = X_checked, y_checked.astype(int)
+            X_validation, y_validation = check_X_y(*validation_data, dtype=np.float64)
+        elif can_validate:
             X_train, X_validation, y_train, y_validation = train_test_split(
                 X_checked,
                 y_checked.astype(int),
@@ -228,6 +232,8 @@ class TabularResidualClassifier(ClassifierMixin, BaseEstimator):
         }
         self.loss_curve_: list[float] = []
         self.validation_loss_curve_: list[float] = []
+        self.training_macro_f1_curve_: list[float] = []
+        self.validation_macro_f1_curve_: list[float] = []
         best_loss = np.inf
         best_parameters = {name: value.copy() for name, value in self.parameters_.items()}
         epochs_without_improvement = 0
@@ -247,6 +253,8 @@ class TabularResidualClassifier(ClassifierMixin, BaseEstimator):
             train_probability, _ = self._forward(X_train, training=False)
             train_loss = self._binary_loss(train_probability, y_train)
             self.loss_curve_.append(train_loss)
+            self.training_macro_f1_curve_.append(float(f1_score(
+                y_train, train_probability.ravel() >= 0.5, average="macro", zero_division=0)))
 
             if X_validation is None or y_validation is None:
                 monitored_loss = train_loss
@@ -254,6 +262,9 @@ class TabularResidualClassifier(ClassifierMixin, BaseEstimator):
                 validation_probability, _ = self._forward(X_validation, training=False)
                 monitored_loss = self._binary_loss(validation_probability, y_validation)
                 self.validation_loss_curve_.append(monitored_loss)
+                self.validation_macro_f1_curve_.append(float(f1_score(
+                    y_validation, validation_probability.ravel() >= 0.5,
+                    average="macro", zero_division=0)))
 
             if monitored_loss < best_loss - self.tol:
                 best_loss = monitored_loss
@@ -345,19 +356,24 @@ def build_model_specs() -> list[ModelSpec]:
                 batch_size=16,
                 learning_rate_init=0.001,
                 max_iter=500,
-                early_stopping=True,
+                # External folds assess generalisation. An internal split after
+                # oversampling can put copies of one WSA on both sides.
+                early_stopping=False,
                 validation_fraction=0.20,
                 n_iter_no_change=30,
                 random_state=RANDOM_STATE,
             ),
-            description="Required feed-forward MLP with two hidden layers and early stopping.",
+            description="Required feed-forward MLP with two hidden layers and training-loss stopping; external CV assesses generalisation.",
         ),
         ModelSpec(
             key="residual_tabular_nn",
             label="Residual Tabular Neural Network",
             family="neural",
             substantive=True,
-            estimator=TabularResidualClassifier(random_state=RANDOM_STATE),
+            estimator=TabularResidualClassifier(
+                random_state=RANDOM_STATE, validation_fraction=0.0,
+                n_iter_no_change=250,
+            ),
             description="Task-appropriate dense residual network for the engineered tabular features.",
         ),
     ]
@@ -373,4 +389,3 @@ def build_model_pipeline(spec: ModelSpec) -> ImbalancedPipeline:
         steps.append(("balance", RandomOverSampler(random_state=RANDOM_STATE)))
     steps.append(("model", spec.estimator))
     return ImbalancedPipeline(steps=steps)
-
