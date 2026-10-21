@@ -147,6 +147,21 @@ def find_invalid_values(frame: pd.DataFrame, percent_tolerance: float = 0.5) -> 
         if not subset.empty:
             subset["calculated_percentage"] = calculated.loc[subset["row_index"]].to_numpy()
         records.append(subset)
+        if reported == TARGET_SOURCE_COLUMN:
+            # Source rounding can change the class even within the usual tolerance.
+            comparable = calculated.between(0, 100) & frame[reported].between(0, 100)
+            different_class = comparable & (
+                calculated.lt(TARGET_THRESHOLD) != frame[reported].lt(TARGET_THRESHOLD)
+            )
+            subset = _invalid_record(
+                frame,
+                different_class,
+                f"reported and calculated percentages imply different classes at {TARGET_THRESHOLD:g}%",
+                (numerator, denominator, reported),
+            )
+            if not subset.empty:
+                subset["calculated_percentage"] = calculated.loc[subset["row_index"]].to_numpy()
+            records.append(subset)
 
     populated = [record for record in records if not record.empty]
     if not populated:
