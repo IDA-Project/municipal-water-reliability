@@ -46,8 +46,23 @@ if st.button('Predict Water Reliability', type='primary'):
             st.error('The prediction could not be completed. Please try again or contact the administrator.')
         else:
             st.subheader('Prediction result')
-            st.success('Predicted category: LOW RELIABILITY' if predicted == 1 else 'Predicted category: RELIABLE (at least 60%)')
-            st.metric('Estimated probability of low reliability', f'{probability:.1%}')
+            reliable_probability = 1.0 - probability
+            category = 'UNRELIABLE' if predicted == 1 else 'RELIABLE'
+            color = '#ef4444' if predicted == 1 else '#16a34a'
+            st.html(f'''
+                <div style="border: 1px solid #80808040; border-radius: 12px; padding: 16px;">
+                    <span class="prediction-badge" style="display: inline-block; color: {color}; background-color: {color}20; border-radius: 999px; padding: 2px 8px; font-size: 0.8rem; font-weight: 600;">Predicted: {category}</span>
+                    <div style="margin-top: 8px; font-size: 0.875rem; opacity: 0.75;">Probability of Reliable</div>
+                    <div class="reliable-probability" style="color: {color}; font-size: 2.5rem; font-weight: 600; margin: 4px 0;">{reliable_probability:.1%}</div>
+                    <div role="progressbar" aria-label="Probability of Reliable" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{reliable_probability * 100}" aria-valuetext="{reliable_probability:.1%}" style="height: 12px; background-color: #80808030; border-radius: 999px; overflow: hidden;">
+                        <div style="width: {reliable_probability:.10%}; height: 100%; background-color: {color}; border-radius: 999px;"></div>
+                    </div>
+                    <div class="unreliable-probability" style="display: flex; justify-content: space-between; gap: 8px; margin-top: 10px; font-size: 0.875rem;">
+                        <span style="opacity: 0.75;">Probability of Unreliable</span><strong>{probability:.1%}</strong>
+                    </div>
+                </div>
+            ''')
+            st.caption('These are model class probabilities, not the reliable-supply percentage. Water access alone does not measure reliable supply.')
             st.write('Use this result to support further investigation with current official information. A reliable prediction does not guarantee uninterrupted water for every resident.')
             st.caption('This probability is a model estimate and has not been independently calibrated. It is not the percentage of residents receiving reliable water.')
 
